@@ -2,3 +2,16 @@
     background-color: white;
     color: rgb(209, 182, 221);
 }
+nav, footer {
+    background-color: rgb(43, 136, 212);
+    color: rgb(245, 236, 236);
+    padding: 10px;
+}
+footer p {
+    font-size: 15px;
+    margin: 15px auto;
+}
+a:hover {
+    background-color: white;
+    color: steelblue;
+}
