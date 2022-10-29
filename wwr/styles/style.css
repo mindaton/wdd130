@@ -7,21 +7,21 @@
     grid-column: 1/11;
     grid-row: 4/9;
 }
-.container{
+.container {
     background-color: rgb(64, 79, 6);
     width: 100%;
     height: 100px;
 }
-.Logo{
-    width: 50px;
-    height: 50px;
-    margin-left: -1100px;
-    margin-top: 20px;
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-left: -50px;
+    margin: 0px;
     z-index: -1;
 }
 #logo_link {
     text-decoration: none;
-    color: #fcfbfb;
+    color: #8a1515;
     text-align: center;
     padding-top: 5px;
     justify-self: center;
@@ -33,15 +33,18 @@
     text-decoration: none;
     padding-top: 10px;
     position: relative;
-    left: 310px;
-    top: -100px;
 }
 header {
     background-color: #6f7364;
     color: antiquewhite;
     display: grid;
-    grid-template-columns: 300px auto;
-    grid-template-rows: 150px;
+    grid-template-columns: 350px auto;
+    grid-template-rows: 210px;
+}
+nav {
+    display: flex;
+    font-size: 22px;
+    justify-content: space-around;
 }
 .home-title {
     font-family:'Times New Roman', Times, serif;
@@ -102,10 +105,9 @@ h1 {
     text-align: center;
 }
 h2 {
-    margin: 0;
+    margin-top: -50px;
 }
 h4 {
-    background-color: #ca790e;
     color:rgb(5, 13, 20);
 }
 .msg {
@@ -144,7 +146,7 @@ h4 {
     background-color: #fcfcfb;
     color: rgb(32, 81, 172);
     text-decoration: none;
-    margin: 200px 0;
+    margin: 100px 0;
     grid-column: 2/4;
     grid-row: 2/3;
 }
@@ -191,23 +193,17 @@ a {
 .button-box {
     text-align: center;
 }
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgba(63, 60, 1, 0.842);
-}
 nav a {
-    background-color:#b86f08;
     color: #fcfbfb;
-    text-align: center;
+    text-align: 80px;
     text-decoration: none;
-    padding: 35px;
-    margin-top: 50px;
-    border-radius: 10px;
+    padding: 80px;
+    margin-block: 5px;
+    margin-top: 80px;
+    z-index: 1;
 }
 nav a:hover {
-    background-color:rgb(207, 87, 7);
-    color:rgb(159, 91, 191);
+    color:rgb(13, 9, 128);
 }
 footer {
     background-color:rgb(50, 113, 221);
@@ -221,7 +217,6 @@ footer {
 footer a {
     background-color: #4976ad;
     text-align: center;
-    color:#f6c393;
     text-decoration: none;
 }
 footer a:hover {
@@ -229,12 +224,13 @@ footer a:hover {
     color:rgb(50, 113, 221);
 }
 footer p {
-    color: #f6c393;
+    color: #2c241c;
     font-size: 1.2em;
 }
 footer p a:hover {
     color:antiquewhite;
     text-decoration: underline;
+    font-size: 1.2em;
 }
 footer .social img {
     text-decoration: none;
