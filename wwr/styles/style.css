@@ -43,14 +43,13 @@ header {
 }
 nav {
     display: flex;
-    font-size: 22px;
+    font-size: 25px;
     justify-content: space-around;
 }
 .home-title {
-    font-family:'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Cochin, Georgia, Times, 'Times New Roman', serif, serif;
     font-size: 2em;
-    background-color: #f8f5f2;
-    color: black;
+    color: #fcfbfb;
     text-decoration: none;
     padding: 15px 30px;
     margin-top: 10px;
@@ -197,7 +196,7 @@ nav a {
     color: #fcfbfb;
     text-align: 80px;
     text-decoration: none;
-    padding: 80px;
+    padding: 75px;
     margin-block: 5px;
     margin-top: 80px;
     z-index: 1;
