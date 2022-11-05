@@ -23,7 +23,7 @@
     text-decoration: none;
     color: #8a1515;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 8px;
     justify-self: center;
     align-self: center;
 }
@@ -35,7 +35,7 @@
     position: relative;
 }
 header {
-    background-color: #6f7364;
+    background-color: #505347;
     color: antiquewhite;
     display: grid;
     grid-template-columns: 350px auto;
@@ -260,7 +260,7 @@ footer .social img {
     }
     .home-title {
         font-size: 25px;
-        color: #6f7364;
+        color: #202417;
     }
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
