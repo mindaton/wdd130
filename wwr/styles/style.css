@@ -7,11 +7,11 @@
     grid-column: 1/11;
     grid-row: 4/9;
 }
-.container {
+/*.container { 
     background-color: rgb(64, 79, 6);
     width: 100%;
     height: 100px;
-}
+} */
 .logo {
     width: 200px;
     height: 200px;
@@ -38,8 +38,8 @@ header {
     background-color: #505347;
     color: antiquewhite;
     display: grid;
-    grid-template-columns: 350px auto;
-    grid-template-rows: 210px;
+    grid-template-columns: 320px auto;
+    grid-template-rows: 200px;
 }
 nav {
     display: flex;
@@ -110,14 +110,14 @@ h4 {
     color:rgb(5, 13, 20);
 }
 .msg {
-    background-color: #6f7364;
+    background-color: #888b7d;
     text-decoration: none;
     text-align: center;
-    line-height: 1.5em;
+    line-height: 1.2em;
     padding: 35px;
     grid-column: 6/10;
     grid-row: 6/7;
-    box-shadow: 5px 5px 10px #6f7364;
+    box-shadow: 4px 4px 4px #83b204;
 }
 .msg h2 {
     background-color: #ca790e;
@@ -133,9 +133,9 @@ h4 {
 }
 .card-img {
     width: 100%;
-    border: 10px solid black;
+    border: 10px solid rgb(75, 71, 71);
     transition: transform .5s;
-    box-shadow: 5px 5px 10px #6f7364;
+    box-shadow: 5px 5px 10px #939884;
 }
 .card-img:hover {
     opacity: .6;
@@ -237,6 +237,128 @@ footer .social img {
     text-align: center;
     padding-top: 15px;
 }
+/* This is for the blog page */
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.column img:hover {
+    opacity: 1;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+    position: relative;
+    display: none;
+}
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+img {
+    vertical-align: middle;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width:300px) {
+    .prev, .next, .text {font-size: 11px;}
+}
+    
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
