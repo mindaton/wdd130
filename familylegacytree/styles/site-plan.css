@@ -93,7 +93,6 @@ p {
 .accent2{
   background-color: var(--accent2-color);
 }
-
 p.colored {
   background-color: var(--paragraph-background-color);
   color: var(--paragraph-color-on-color);
@@ -124,7 +123,6 @@ nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
-
 .sitemap {
   display: grid;
   justify-content: center;
