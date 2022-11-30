@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles/main-site-plan.css">
+</head>
+<div id="content">
+    <header>
+        <a id="logo_link" href="site-plan-rafting.html">
+            <img src="images/mindatonspark logo.png" alt="MindatonSpark Logo" width="200" height="200" />
+        </a>
+    </header>
+</div>
+
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">Home</a>
+    <a href="career.html">Careers</a>
+    <a href="categories.html">Categories</a>
+    <a href="#">Contact Us</a>
+  </div>
+  
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰</button>   
+  </div>
+  <div class="row">
+    <div class="column">
+        <h2>FamilyLegacyTree</h2>
+        <p>"A People without the knowledge of their past history, origin & culture is like a tree without roots-Marcus Garvey."</p>
+        <p> Bring to life your family's genealogy by exploring the past of those that came before you.</p>
+    </div>
+  </div>
+  <script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+    
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/Benin.jpg" style="width:100%" >
+        <div class="text"></div>
+      </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/Duke of Calabar.jpg" style="width:100%" >
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/familyhistory.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+    <br>
+    <div class="button-box">
+        <a class="book" href="index.html">Get Started</a>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000);
+        }
+    </script>
+    <div class="card">
+        <h3>Popular Post</h3>
+        <div class="fakeimg">
+            <p>Image</p>
+        </div>
+        <div class="fakeimg">
+            <p>Image</p>
+        </div>
+        <div class="fakeimg">
+            <p>Image</p>
+        </div>
+        <div class="card">
+            <h3>Follow US</h3>
+        </div>
+    </div>
+
+    <footer>
+            <p> FamilyLegacyTree &copy; 2022 - Okokon Edet</p>
+            <p><a href="index.html"> Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a> 
+            </div>
+    </footer>
+</body>
+</html>
