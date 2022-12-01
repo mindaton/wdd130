@@ -51,6 +51,7 @@ img {vertical-align: middle;}
 }
 
 .dot {
+  cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -63,6 +64,13 @@ img {vertical-align: middle;}
     float:left;
     width: 33.33%;
     padding: 15px;
+}
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.column img:hover {
+  opacity: 1;
 }
 .row > .column {
   padding: 0 8px;
@@ -127,6 +135,13 @@ img {vertical-align: middle;}
   position: absolute;
   top: 0;
 }
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
 img {
   margin-bottom: -4px;
   vertical-align: middle;
@@ -143,9 +158,9 @@ img {
   opacity: 0.6;
 }
 
-.active,
-.demo:hover {
+.active, .demo:hover {
   opacity: 1;
+  background-color: #717171;
 }
 
 img.hover-shadow {
@@ -154,9 +169,6 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.active {
-  background-color: #717171;
 }
 
 .fade {
@@ -200,6 +212,10 @@ body {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+.closebtn {
+  color:white;
+  cursor: pointer;
 }
   
 .openbtn {
@@ -476,6 +492,7 @@ img.avatar {
 }
 .container {
   position: relative;
+  display: none;
 }
 span.psw {
   float: right;

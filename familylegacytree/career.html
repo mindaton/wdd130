@@ -78,18 +78,61 @@
           }
         }
     </script>
-        <div class="row">
-            <div class="column">
-                <img src="images/team.jpg" alt="Work" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="images/Join us photo.png" alt="Team" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="images/alex-knight-.jpg" alt="Robot" style="width:100%" onclick="myFunction(this);">
-            </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="images/pexels-marily-torres-776615.jpg" style="width:100%">
+            <div class="text">Join Our Team</div>
         </div>
-        <br>
+        <div class="mySlides fade">
+            <img src="images/pexels-kampus-production-5920774.jpg" style="width:100%">
+            <div class="text">Right Team</div>
+          </div>
+        <div class="mySlides fade">
+            <img src="images/pexels-sora-shimazaki-5673488.jpg" style="width:100%">
+            <div class="text">Explore Our Services</div>
+        </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
         <section class="msg">
             <h1>Career With Us</h1>
             <p>We are modern and fast-spaced in collecting, organizing and preserving family's history
@@ -101,6 +144,37 @@
             <a class="book" href="index.html">Work With Us</a>
             <h4>Submit your resume@familylegacytree.org</h4>
         </section>
+        <div style="text-align:center">
+            <p>Click on the images below:</p>
+          </div>
+          
+          <div class="row">
+            <div class="column">
+              <img src="images/pexels-suzy-hazelwood-3617568.jpg" alt="Discover Your Root" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="images/pexels-tomas-anunziata-695199.jpg" alt="Oral Genealogy" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="images/pexels-askar-abayev-6190865.jpg" alt="African Heritage" style="width:100%" onclick="myFunction(this);">
+            </div>
+          </div>
+          
+          <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+          </div>
+          
+          <script>
+          function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+          }
+          </script>
 
         <footer>
             <p> FamilyLegacyTree &copy; 2022 - Okokon Edet</p>
